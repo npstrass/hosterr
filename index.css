@@ -20,6 +20,13 @@ body {
   padding: 0.3rem 0.5rem;
   background: linear-gradient(to right, #eab250, #ea5274);
   border-radius: 50px;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.cta:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 h1 {
@@ -97,6 +104,13 @@ input::placeholder {
   font-weight: bold;
   color: white;
   background: #4977ea;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 input,
@@ -125,7 +139,7 @@ span {
 
 .imgWrapper img {
   width: 360px;
-  transition: 300ms;
+  transition: 200ms;
 }
 
 .shape {
@@ -154,6 +168,7 @@ span {
   z-index: 1;
 }
 
+i,
 .menu {
   display: none;
   font-size: 1.5rem;
@@ -176,6 +191,7 @@ span {
     display: none;
   }
 
+  i,
   .menu {
     display: block;
   }
@@ -188,6 +204,6 @@ span {
   }
 
   .imgWrapper img {
-      width: 200px;
+    width: 200px;
   }
 }
