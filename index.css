@@ -166,19 +166,19 @@ span {
 .purple {
   transform: translate(-50%, -50%) rotate(-13deg);
   z-index: 3;
-  animation: rotatePurp 1500ms ease;
+  animation: rotate 1500ms ease;
 }
 
 .pink {
   transform: translate(-50%, -50%) rotate(-24deg);
   z-index: 2;
-  animation: rotatePink 1600ms ease;
+  animation: rotate 1600ms ease;
 }
 
 .blue {
   transform: translate(-50%, -50%) rotate(-35deg);
   z-index: 1;
-  animation: rotateBlue 1700ms ease;
+  animation: rotate 1700ms ease;
 }
 
 @keyframes rotateHero {
@@ -191,33 +191,12 @@ span {
   }
 }
 
-@keyframes rotatePurp {
+@keyframes rotate {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 
   to {
-    transform: translate(-50%, -50%) rotate(-13deg);
-  }
-}
-
-@keyframes rotatePink {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(-24deg);
-  }
-}
-
-@keyframes rotateBlue {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(-35deg);
   }
 }
 
