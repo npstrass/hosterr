@@ -13,6 +13,17 @@
   </head>
 
   <body>
+    <div id="mobileNav" class="mobileNav disNone">
+      <div class="flexBox">
+        <p>Plans</p>
+        <p>Find Domain</p>
+        <p>Why Hosterr</p>
+      </div>
+      <div class="flexBox">
+        <p>Sign in</p>
+        <p class="btn">Join Waitlist</p>
+      </div>
+    </div>
     <div class="contentWrapper">
       <div class="container">
         <div class="flexBox">
@@ -28,7 +39,7 @@
           <p>Sign in</p>
           <p class="btn">Join Waitlist</p>
         </div>
-        <span class="menu"><i class="fas fa-ellipsis-h"></i></span>
+        <span id="menu" class="menu"><i class="fas fa-ellipsis-h"></i></span>
       </div>
 
       <div class="container">
@@ -71,5 +82,17 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document.getElementById("menu").addEventListener("click", () => {
+        if (
+          document.getElementById("mobileNav").classList.contains("disNone")
+        ) {
+          document.getElementById("mobileNav").classList.remove("disNone");
+        } else {
+          document.getElementById("mobileNav").classList.add("disNone");
+        }
+      });
+    </script>
   </body>
 </html>
