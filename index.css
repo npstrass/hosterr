@@ -70,6 +70,16 @@ p {
   flex-direction: column;
   max-width: 500px;
   z-index: 5;
+  animation: slideIn 1200ms ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-60px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 
 .form {
@@ -150,21 +160,65 @@ span {
 .hero {
   position: relative;
   z-index: 4;
+  animation: rotateHero 1300ms ease;
 }
 
 .purple {
   transform: translate(-50%, -50%) rotate(-13deg);
   z-index: 3;
+  animation: rotatePurp 1500ms ease;
 }
 
 .pink {
   transform: translate(-50%, -50%) rotate(-24deg);
   z-index: 2;
+  animation: rotatePink 1600ms ease;
 }
 
 .blue {
   transform: translate(-50%, -50%) rotate(-35deg);
   z-index: 1;
+  animation: rotateBlue 1700ms ease;
+}
+
+@keyframes rotateHero {
+  from {
+    transform: rotate(2deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotatePurp {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-13deg);
+  }
+}
+
+@keyframes rotatePink {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-24deg);
+  }
+}
+
+@keyframes rotateBlue {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-35deg);
+  }
 }
 
 .menu {
