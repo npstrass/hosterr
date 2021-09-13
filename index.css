@@ -24,11 +24,6 @@ body {
   transition: 200ms;
 }
 
-.cta:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
@@ -108,6 +103,8 @@ input::placeholder {
   transition: 200ms;
 }
 
+.cta:hover,
+.nav p:hover,
 .btn:hover {
   cursor: pointer;
   opacity: 0.6;
@@ -168,7 +165,6 @@ span {
   z-index: 1;
 }
 
-i,
 .menu {
   display: none;
   font-size: 1.5rem;
@@ -191,7 +187,6 @@ i,
     display: none;
   }
 
-  i,
   .menu {
     display: block;
   }
